@@ -82,7 +82,7 @@ Any child elements with this attribute get added to a `refs` object, with the at
 
 ```HTML
 <div data-mounts="color-changer">
-  <div class="w-16 h-16" ref="colorSquare"></div>
+  <div class="w-16 h-16" data-ref="colorSquare"></div>
   
   <div class="flex space-x-2">
     <button data-ref="buttons" data-color="red">Make it red!</button>
