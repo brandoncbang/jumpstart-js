@@ -96,7 +96,7 @@ Any child elements with this attribute get added to a `refs` object, with the at
   mount('color-changer', (root, props, refs) => {
     refs.buttons.forEach(button => {
       button.onclick = (e) => {
-        refs.colorSquare.style.color = button.dataset.color;
+        refs.colorSquare.style.background = button.dataset.color;
       }
     });
   });
