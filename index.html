@@ -24,7 +24,22 @@
   </div>
 
   <script type="module">
-    // import { mount } from '';
+    import { mount } from 'https://brandoncbang.github.io/jumpstart-js/index.js';
+    
+    mount('dropdown', (root, props, refs) => {
+      let show = false;
+      
+      function updateList() {
+        refs.list.style.display = show ? '' : 'none';
+      }
+      
+      refs.button.onclick = (e) => {
+        show = !show;
+        updateList();
+      }
+      
+      updateList();
+    });
   </script>
 </body>
 
